@@ -1,5 +1,5 @@
 {% set name = "qnorm" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a7a9e48c70faefef31d9343af7c62a42b41c87eae963f3a76eea5711e99078d8
+  sha256: c77432b0529989ca81685b537a61158e9a23f9599965edd2a9cc2bd2eb4e0ad6
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Easy and fast quantile normalization in Python'
+  summary: Easy and fast quantile normalization in Python
 
 extra:
   recipe-maintainers:
