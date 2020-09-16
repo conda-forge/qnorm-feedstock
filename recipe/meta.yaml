@@ -24,7 +24,6 @@ requirements:
     - python >=3.6
     - numba
     - numpy
-    - pandas
 
 test:
   imports:
