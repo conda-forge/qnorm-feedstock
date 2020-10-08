@@ -5,11 +5,9 @@ Home: https://github.com/Maarten-vd-Sande/qnorm
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qnorm-feedstock/blob/master/LICENSE.txt)
 
 Summary: Easy and fast quantile normalization in Python
-
-
 
 Current build status
 ====================
