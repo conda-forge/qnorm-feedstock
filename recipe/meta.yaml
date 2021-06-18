@@ -1,5 +1,5 @@
 {% set name = "qnorm" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f1e67cc0478db1167d4c614f47274ad6637561d0b2a84ada12ab7f1744edc48c
+  sha256: 1ef806f6ae779c3a62a6eeeb48721b2ed1f456591eca786994519a85279a5c68
 
 build:
   noarch: python
