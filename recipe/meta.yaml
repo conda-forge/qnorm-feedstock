@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,9 +21,9 @@ requirements:
     - toml
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - numba
-    - numpy <=1.20
+    - numpy <=1.23.5
 
 test:
   imports:
