@@ -20,7 +20,7 @@ requirements:
     - python
     - toml
     - pip
-    - setuptools >59,<61
+    - setuptools >59
   run:
     - python >=3.7
     - numba
