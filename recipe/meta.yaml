@@ -7,26 +7,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 61b2f3ef09a9c552a4f3b83dc438cb13f191fa190164361a3a508c4777eed3c7
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - toml
     - pip
     - setuptools >59,<61
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numba
     - numpy <=1.23.5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - qnorm
 
