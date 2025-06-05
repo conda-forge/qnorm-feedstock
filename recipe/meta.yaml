@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - numba
-    - numpy <=1.23.5
+    - numpy
 
 test:
   imports:
