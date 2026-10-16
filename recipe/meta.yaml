@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 02181028288f3674615f1d28938bae77158675bd0deb8c68d14f8ff0df9e3917
+  sha256: 7d3cba70192262b6b4d0cc88ab0864f34728b5e9e77cfffb5093cf1de2aea742
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python
     - toml
     - pip
-    - setuptools >61
+    - setuptools >=64
   run:
     - python >=3.8
     - numpy
